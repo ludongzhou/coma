@@ -539,7 +539,7 @@ public class LoadFromDBThread extends Thread {
 		}
 		long start = System.currentTimeMillis();
 //		Source source = controller.getManager().getSource(
-//				schemaName);
+//				schemaName)
 //		if (debug) {
 //			System.out
 //					.println("controller.getManager().getSource(schemaName) done: "

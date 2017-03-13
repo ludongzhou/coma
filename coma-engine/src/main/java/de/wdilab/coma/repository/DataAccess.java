@@ -578,7 +578,7 @@ public class DataAccess extends Repository{
 	 */
 	DirectedGraphImpl loadStructure(Source source, SourceRelationship intraRel) {
 	    if (source==null) return null;
-	    boolean verbose= false;
+	    boolean verbose= true;
 	    //build object graph
 	    DirectedGraphImpl objectGraph = new DirectedGraphImpl();
 	    //Extract objects from a source which may have sub-sources

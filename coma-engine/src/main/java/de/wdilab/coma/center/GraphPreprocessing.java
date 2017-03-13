@@ -49,7 +49,7 @@ import de.wdilab.coma.structure.graph.GraphUtil;
  * @author Hong Hai Do, Sabine Massmann
  */
 public class GraphPreprocessing {
-	boolean verbose = false;
+	boolean verbose = true;
 	
 	DataAccess accessor = null;
 	ExecWorkflow exec = null;
@@ -188,6 +188,7 @@ public class GraphPreprocessing {
 	        }
 	      if (currentState==Graph.PREP_REDUCED && targetState>=Graph.PREP_SIMPLIFIED) {
 	          Graph simplGraph = simplifyGraph(prepGraph);
+//	          Graph simplGraph = prepGraph;
 	          if (simplGraph!=null){
 	          	prepGraph = simplGraph;
 	  	        if (verbose) prepGraph.printGraphInfo();
